@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Events Amrita Campus Sportss Meet 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="sports">
+    <header class="site-header">
+        <div class="brand">
+            <h1>Sports Events</h1>
+            <p>See all event details and register to participate.</p>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sports.html" class="nav-link">Sports</a>
+            <a href="feedback.html" class="nav-link">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-grid sports-grid">
+        <section class="events-card">
+            <h2>Available Events</h2>
+            <div class="table-scroll">
+                <table class="event-table">
+                    <thead>
+                        <tr>
+                            <th>Event ID</th>
+                            <th>Event Name</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Venue</th>
+                            <th>Fee</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+        <section class="participant-card">
+            <h2>Student Participation Form</h2>
+            <form id="participantForm">
+                <div class="form-grid">
+                    <label for="studentName">Namee</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                    <label for="registrationNumber">Registration no.</label>
+                    <input type="text" id="registrationNumber" name="registrationNumber" required>
+                    <label for="studentEmail">Email ID</label>
+                    <input type="email" id="studentEmail" name="studentEmail" required>
+                    <label for="studentPhone">Phone Number (only 10 digits)</label>
+                    <input type="tel" id="studentPhone" name="studentPhone" required>
+                    <label for="studentDepartment">Your Department</label>
+                    <select id="studentDepartment" name="studentDepartment" required>
+                        <option value="">Select yout Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="AIE">AIE</option>
+                    </select>
+
+                    <label for="participantEvent">Select Event</label>
+                    <select id="participantEvent" name="participantEvent" required>
+                        <option value="">Select event</option>
+                    </select>
+
+                    <label for="teamMembers">No. of Members</label>
+                    <select id="teamMembers" name="teamMembers" required>
+                        <option value="">Select Members</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit</button>
+                <p id="participantMessage" class="message"></p>
+            </form>
+
+            <div class="summary-card">
+                <h3>Participation table</h3>
+                <p id="participantCount">no student registered</p>
+                <table id="participantTable" class="simple-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Reg No</th>
+                            <th>Event</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Department</th>
+                            <th>Team Members</th>
+                        </tr>
+                    </thead>
+                    <tbody id="participantDetails"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <h3>ourr contact Details</h3>
+            <p>Sports Office,amrita vishwa vidhya peetham </p>
+            <p>Email: amrita2026@campus.edu</p>
+            <p>Phone: +911234567890</p>
+        </div>
+        <div>
+            <p>Keep moving, keep competing, and show your campus spirit.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

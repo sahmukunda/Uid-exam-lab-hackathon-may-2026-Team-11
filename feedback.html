@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Amrita Campus Sports Meet 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="feedback">
+    <header class="site-header">
+        <div class="brand">
+            <h1>Feedback form</h1>
+            <p>Share your thoughts pwease TwT</p>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="sports.html" class="nav-link">Sports</a>
+            <a href="feedback.html" class="nav-link">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-grid feedback-grid">
+        <section class="feedback-card">
+            <h2>Feedback Form </h2>
+            <form id="feedbackForm">
+                <div class="form-grid">
+                    <label for="feedbackName">Name</label>
+                    <input type="text" id="feedbackName" name="feedbackName" required>
+                    <label for="feedbackReg">Registration Number</label>
+                    <input type="text" id="feedbackReg" name="feedbackReg" required>
+                    <label for="feedbackRating">Rating</label>
+                    <select id="feedbackRating" name="feedbackRating" required>
+                        <option value="">Select rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label for="feedbackEvent">Event</label>
+                    <select id="feedbackEvent" name="feedbackEvent" required>
+                        <option value="">Select event</option>
+                    </select>
+                    <label for="feedbackMessageInput">Feedback Message</label>
+                    <textarea id="feedbackMessageInput" name="feedbackMessageInput" rows="5" minlength="20" required></textarea>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+                <p id="feedbackMessage" class="message"></p>
+            </form>
+        </section>
+
+        <section class="feedback-list-card">
+            <h2>Feedback Submitted</h2>
+            <table class="simple-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Reg No</th>
+                        <th>Event</th>
+                        <th>Rating</th>
+                        <th>Message</th>
+                        <th>Submitted On</th>
+                    </tr>
+                </thead>
+                <tbody id="feedbackList"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <h3>our contact Details</h3>
+            <p>Sports Office,amrita vishwa vidhya peetham </p>
+            <p>Email: Amrita2026@campus.edu</p>
+            <p>Phone: +911234567890</p>
+        </div>
+        <div>
+            <p>Your voice helps the next campus sports meet become even better.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
